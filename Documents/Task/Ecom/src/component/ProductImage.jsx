@@ -2,14 +2,12 @@ import React, { useState } from "react";
 
 const ProductImage = ({ imgs }) => {
   const [mainImage, setMainImage] = useState(imgs[0]);
-  console.log(imgs);
 
   return (
     <div>
       <div className=" flex justify-center">
         <div className="xs:px-1 lg:px-16 xl:px-36 2xl:px-48 ">
-
-        <img src={mainImage} alt="" className="w-full h-auto xs:h-auto " />
+          <img src={mainImage} alt="" className="w-full h-auto xs:h-auto " />
         </div>
       </div>
       <div className="flex justify-center py-4 gap-24">

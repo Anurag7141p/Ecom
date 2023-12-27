@@ -30,25 +30,27 @@ export const productDetails = {
   discountHours: 24,
 };
 
-export const categoryList = ["Bike", "Car", "Camera", "House", "Room"];
+// export const categoryList = ["Bike", "Car", "Camera", "House", "Room"];
 
-export const subCategoryList = ["A", "B", "C", "D", "E", "F", "G", "H"];
+// export const subCategoryList = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
-export const test = {
-  subcategoryName: "car",
-  fieldName: "number plate",
-  type: "input box",
-  min: "7",
-  max: "7",
-};
-export const test2 = [
+// export const test = {
+//   subcategoryName: "car",
+//   fieldName: "number plate",
+//   type: "input box",
+//   min: "7",
+//   max: "7",
+// };
+
+export const categoryDetails = [
   {
-    categoryName: "vehicles",
+    categoryId: "2255",
+    image: "",
     subcategoryName: "car",
     fields: [
       {
         name: "number plate",
-        type: "input box",
+        type: "inputbox",
         min: "7",
         max: "7",
         datatype: "string",
@@ -61,12 +63,13 @@ export const test2 = [
     ],
   },
   {
-    categoryName: "vehicles",
+    categoryId: "2255",
+    image: "",
     subcategoryName: "bike",
     fields: [
       {
         name: "number plate",
-        type: "input box",
+        type: "inputbox",
         min: "7",
         max: "7",
         datatype: "string",
@@ -79,21 +82,37 @@ export const test2 = [
     ],
   },
   {
-    categoryName: "camera and equipments  ",
+    categoryId: "007",
     subcategoryName: "camera",
     fields: [
       {
-        name: "number plate",
-        type: "input box",
-        min: "7",
-        max: "7",
-        datatype: "string",
+        name: "camera types",
+        type: "dropdown",
+        value: [
+          "Dslr cameras",
+          "mirrorless camera",
+          "film cameras",
+          "medium format cameras",
+        ],
       },
       {
-        name: "fuel type",
+        name: "Sensor size",
         type: "dropdown",
-        value: ["petrol", "diesel", "ev"],
+        value: ["Full-frame", "aps-c", "micro four thirds"],
       },
     ],
+  },
+];
+
+export const testCategory = [
+  {
+    name: "vehicle",
+    image: "",
+    id: "2255",
+  },
+  {
+    name: "camera and eqp",
+    image: "",
+    id: "007",
   },
 ];

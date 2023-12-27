@@ -1,9 +1,6 @@
 import React from "react";
 import ProductImage from "../component/ProductImage";
-import { MdSecurity } from "react-icons/md";
-import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Accordian from "../component/Accordian";
-import { FaCalendarCheck } from "react-icons/fa";
 
 const ProductDetails = ({ data }) => {
   if (data) {
